@@ -21,8 +21,24 @@
   .bg-gradient {
     @apply bg-gradient-to-r from-[#E9038A] to-[#0A6195] ;
   }
+  /* FONTS */
+  .regular-16 {
+    @apply text-[16px] font-[400];
+  }
+  .regular-18 {
+    @apply text-[18px] font-[400];
+  }
+  .regular-20 {
+    @apply text-[20px] font-[400];
+  }
   .bold-16 {
     @apply text-[16px] font-[700];
+  }
+  .bold-52 {
+    @apply text-[52px] font-[700] leading-[120%];
+  }
+  .bold-88 {
+    @apply text-[88px] font-[700] leading-[120%];
   }
 }
 
