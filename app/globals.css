@@ -1,3 +1,29 @@
 @import "tailwindcss";
 
 
+
+@utility flexBetween {
+  @apply flex items-center justify-between;
+}
+@utility flexCenter {
+  @apply flex items-center justify-center;
+}
+
+@utility max-container {
+  @apply mx-auto max-w-[1440px];
+}
+
+@utility padding-container {
+  @apply px-6 lg:px-20 2xl:px-0;
+}
+
+@layer utilities {
+  .bg-gradient {
+    @apply bg-gradient-to-r from-[#E9038A] to-[#0A6195] ;
+  }
+  .bold-16 {
+    @apply text-[16px] font-[700];
+  }
+}
+
+
