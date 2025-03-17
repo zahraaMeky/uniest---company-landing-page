@@ -21,6 +21,10 @@
   .bg-gradient {
     @apply bg-gradient-to-r from-[#E9038A] to-[#0A6195] ;
   }
+  .text-gradient {
+    @apply bg-linear-to-br from-[#E9038A] to-[#0A6195];
+  }
+  
   /* FONTS */
   .regular-16 {
     @apply text-[16px] font-[400];
@@ -34,8 +38,23 @@
   .bold-16 {
     @apply text-[16px] font-[700];
   }
+  
+  .bold-32 {
+    @apply text-[32px] font-[700] leading-[120%];
+  }
+
+  .bold-20 {
+    @apply text-[20px] font-[700];
+  }
+  .bold-40 {
+    @apply text-[40px] font-[700] leading-[120%];
+  }
   .bold-52 {
     @apply text-[52px] font-[700] leading-[120%];
+  }
+  
+  .bold-64 {
+    @apply text-[64px] font-[700] leading-[120%];
   }
   .bold-88 {
     @apply text-[88px] font-[700] leading-[120%];
