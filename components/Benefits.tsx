@@ -19,7 +19,7 @@ export const Benefits = () => {
                 description={Benefit.description}
               />
             ))}
-          </ul>
+        </ul>
     </section>
   )
 }

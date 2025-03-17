@@ -5,7 +5,8 @@ export const NAV_LINKS = [
     { href: '/contact', key: 'Contact US', label: 'Contact US' },
    
   ];
-// BENEFITS SECTION
+
+// BENEFITS SECTION  
 export const BENEFITS = [
   {
     title: 'Diverse Funding Access',
@@ -22,7 +23,6 @@ export const BENEFITS = [
   {
     title: 'Regulated Investment Ecosystem',
     icon: '/InvestmentIcon.svg',
-    variant: 'green',
     description:
       'A financial environment ensuring investments adhere to legal and regulatory standards for security and transparency.',
   },
@@ -44,5 +44,39 @@ export const BENEFITS = [
     description:
       'Effortless and protected financial transactions ensuring reliability and user confidence.',
   },
+
+]
+
+// FEATURES SECTION
+export const FEATURES = [
+  {
+    title: 'Equity Crowdfunding',
+    icon: '/CrowdfundingIcon.svg',
+    variant: "#E9038A",
+    description:
+      'Unlock growth capital from global investors.',
+  },
+  {
+    title: 'AI-Powered Risk Analytics',
+    icon: '/AnalyticsIcon.svg',
+    variant: "#93278F",
+    description:
+      "Smarter investment decisions with data insights.",
+  },
+  {
+    title: 'Blockchain Security',
+    icon: '/BlockchainIcon.svg',
+    variant: "#404A93",
+    description:
+      'Encrypted and transparent financial transactions.',
+  },
+  {
+    title: 'Strategic Partnerships',
+    icon: '/StrategicIcon.svg',
+    variant: "#1688CC",
+    description:
+      'Collaborations with financial institutions & tech leaders.',
+  },
+ 
 
 ]
