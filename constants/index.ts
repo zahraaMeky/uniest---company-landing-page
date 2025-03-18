@@ -91,3 +91,28 @@ export const FEATURES = [
  
 
 ]
+
+export const SOCIALS = [
+  {
+    title: 'instagram',
+    icon: '/instagram.svg',
+    link: "/",
+  },
+  {
+    title: 'facebook',
+    icon: '/facebook.svg',
+    link: "/",
+  },
+  {
+    title: 'linkedIn',
+    icon: '/linkedIn.svg',
+    link: "/",
+  },
+  {
+    title: 'youtube',
+    icon: '/youtube.svg',
+    link: "/",
+  },
+];
+
+

@@ -28,6 +28,10 @@
   .bg-gradient {
     @apply bg-gradient-to-r from-[#E9038A] to-[#0A6195] ;
   }
+  .bg-gradient-multiColor{
+    @apply bg-gradient-to-r from-[#9B248E]/90 via-[#4A4792]/90 to-[#2D5393]/90
+   
+  }
   .text-gradient {
     @apply bg-linear-to-br from-[#E9038A] to-[#0A6195];
   }
