@@ -9,17 +9,21 @@ export const Benefits = () => {
         <h2 className="text-center bold-40 lg:bold-64 text-transparent bg-clip-text text-gradient">
             Key Benefits
         </h2>
-        <h2></h2>
-        <ul className="mt-10 grid gap-10 md:grid-cols-3 lg:mg-20 lg:gap-20">
-            {BENEFITS.map((Benefit) => (
-              <BenefitItem 
-                key={Benefit.title}
-                title={Benefit.title} 
-                icon={Benefit.icon}
-                description={Benefit.description}
-              />
-            ))}
-        </ul>
+        {BENEFITS.map((category) => (
+          <div key={category.title} className="mt-5 mb-5 lg:mt-10 lg:mb-15">
+            <h2 className='regular-64 text-center text-black-gradient text-transparent bg-clip-text'>{category.title}</h2>
+            <ul className="grid gap-10 md:grid-cols-3 lg:gap-20">
+              {category.benefits.map((benefit) => (
+                <BenefitItem 
+                  key={benefit.title}
+                  title={benefit.title} 
+                  icon={benefit.icon}
+                  description={benefit.description}
+                />
+              ))}
+            </ul>
+          </div>
+        ))} 
     </section>
   )
 }

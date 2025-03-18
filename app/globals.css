@@ -31,7 +31,9 @@
   .text-gradient {
     @apply bg-linear-to-br from-[#E9038A] to-[#0A6195];
   }
-  
+  .text-black-gradient {
+    @apply bg-gradient-to-r from-[#000000] to-[#FFFFFF] opacity-20;
+  }
   /* FONTS */
   .regular-14 {
     @apply text-[14px] font-[400];
@@ -45,10 +47,15 @@
   .regular-20 {
     @apply text-[20px] font-[400];
   }
+  .regular-64 {
+    @apply text-[96px] font-[400] leading-[120%];
+  }
   .bold-16 {
     @apply text-[16px] font-[700];
   }
-  
+  .bold-18 {
+    @apply text-[18px] font-[700];
+  }
   .bold-32 {
     @apply text-[32px] font-[700] leading-[120%];
   }
