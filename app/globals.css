@@ -51,6 +51,9 @@
   .regular-20 {
     @apply text-[20px] font-[400];
   }
+  .regular-32 {
+    @apply text-[32px] font-[400];
+  }
   .regular-64 {
     @apply text-[96px] font-[400] leading-[120%];
   }

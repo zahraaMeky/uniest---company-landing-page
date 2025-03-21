@@ -57,7 +57,39 @@ export const BENEFITS = [
   },
 ];
 
-
+// WHYCHOOSE SECTION  
+export const WHYCHOOSE = [
+      {
+        title: 'Innovative Funding Model',
+        number: '/1.svg',
+        image:'/Innovative.svg',
+        description:
+          'Transforming SME financing with equity-based solutions.',
+      },
+      {
+        title: 'Security & Transparency',
+        number: '/2.svg',
+        image: '/Security.svg',
+        description:
+          'Blockchain-backed transactions for trust and compliance.',
+      },
+      {
+        title: 'Scalability & Growth',
+        number: '/3.svg',
+        image: '/Scalability.svg',
+        description:
+          'Partnerships with accelerators, financial institutions, and regulatory bodies.',
+      },
+     
+      {
+        title: 'Strategic Advantage',
+        number: '/4.svg',
+        image: '/Strategic.svg',
+        description:
+          'Data-driven insights for smarter investment decisions.',
+      },
+    ]
+  
 // FEATURES SECTION
 export const FEATURES = [
   {
