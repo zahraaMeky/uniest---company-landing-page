@@ -52,7 +52,7 @@ export const About = () => {
               >
                 {/* Left Section: Paragraph + Button */}
                 <div className="md:w-1/2 flex flex-col items-start gap-4">
-                  <p className="leading-7 mt-5 text-black regular-18 transition-opacity duration-[1200ms] ease-in-out">
+                  <p className="leading-8 mt-5 text-black regular-18 transition-opacity duration-[1200ms] ease-in-out">
                     {tab.description}
                   </p>
 
