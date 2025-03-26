@@ -59,7 +59,7 @@ export const About = () => {
                   {/* Button Below Paragraph */}
                   <Link
                     href="/"
-                    className="bold-16 text-black flexCenter cursor-pointer 
+                    className="bold-16 text-black flexCenter cursor-pointer  mt-4
                     border-2 border-black rounded-xl px-5 py-3 
                     transition-all duration-500 ease-in-out 
                     hover:bg-gradient-to-r hover:from-[#9B248E]/90 hover:via-[#4A4792]/90 hover:to-[#2D5393]/90 
