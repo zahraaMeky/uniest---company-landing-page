@@ -155,7 +155,7 @@ export  const TABS = [
     DefaultImage: "/About Icon - default.svg",
     ActiveImage:"/About Icon - Colored.svg",
     description:"UNIEST is an Oman based online shopping destination which offers a wide variety of products at affordable price. We aim to offer a full range of products to the residents of Oman to act as the one stop solution for all their shopping requirements. This is a multi-vendor platform which enables the retailers and customers to meet at UNIEST.",
-    image:"/abouttry.svg"
+    image:"/About.svg"
   },
   { 
     id: 2,
@@ -163,7 +163,7 @@ export  const TABS = [
     DefaultImage: "/Vision Icon - default.svg",
     ActiveImage:"/Vision Icon -  Colored.svg" ,
     description:"Our Vision is to revolutionize SME funding by creating a trusted, technology-driven investment ecosystem that fuels entrepreneurship, drives economic impact, and enhances financial accessibility for businesses worldwide. Through continuous innovation and strategic development, we aim to reshape the future of SME investment.",
-    image:"/Vision.svg"
+    image:"/vision.svg"
   },
   {
      id: 3, 
@@ -171,7 +171,7 @@ export  const TABS = [
      DefaultImage: "/Mission Icon - default.svg",
     ActiveImage:"/Mission Icon - Colored.svg",
     description:"Our Mission is to bridge the gap between SMEs and investors by providing a secure, compliant, and data-driven platform that facilitates seamless funding, empowers business growth, and ensures long-term financial success. By integrating cutting-edge solutions and fostering strategic collaboration, we enable sustainable investment opportunities.",
-    image:"/About.svg"
+    image:"/mission.svg"
    },
 ];
 

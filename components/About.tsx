@@ -40,11 +40,11 @@ export const About = () => {
         <div className="relative flex flex-col min-w-0 break-words w-full">
           {/* Reduced padding here */}
           <div className="">
-            <div className="tab-content tab-space">
+            <div className="tab-content tab-space py-5">
               {TABS.map((tab) => (
                 <div 
                   key={tab.id} 
-                  className={`${openTab === tab.id ? "flex" : "hidden"} flex-col md:flex-row items-start justify-between gap-6`}
+                  className={`${openTab === tab.id ? "flex" : "hidden"} flex-col md:flex-row items- justify-between gap-6`}
                   id={`link${tab.id}`}
                 >
                   {/* Text Content */}
