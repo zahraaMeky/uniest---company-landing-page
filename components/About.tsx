@@ -7,7 +7,7 @@ export const About = () => {
   const [openTab, setOpenTab] = useState(1);
 
   return (
-    <section className="max-container padding-container relative w-full flex-col items-center justify-start pb-32">
+    <section className="max-container padding-container relative w-full flex-col items-center justify-start">
       <div className="w-full">
         {/* Reduced top padding for tabs */}
         <ul className="flex mb-0 list-none flex-wrap pt-1 pb-2 flex-row border-b border-gray-300" role="tablist">
@@ -48,7 +48,7 @@ export const About = () => {
                   id={`link${tab.id}`}
                 >
                   {/* Text Content */}
-                  <p className="md:w-1/2 text-black regular-18 mt-0">
+                  <p className="md:w-1/2 text-black regular-18 mt-5">
                     {tab.description}
                   </p>
 

@@ -5,7 +5,7 @@ import { WHYCHOOSE } from '@/constants';
 
 export const WhyChoose = () => {
   return (
-    <section className="max-container padding-container relative w-full flex-col items-center justify-start pb-32">
+    <section className="max-container padding-container relative w-full flex-col items-center justify-start pb-20">
       <Image
         src="/QuestionmarkIcon.svg"
         alt="QuestionmarkIcon"
