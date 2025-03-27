@@ -8,7 +8,7 @@ export const Hero = () => {
         <h2 className="text-black font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
           Unlock Growth with
         </h2>
-        <h2 className="bg-gradient text-[#FFF1F9] font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+        <h2 className="bg-gradient  text-[#FFF1F9] font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
           Smarter Investments
         </h2>
         <p className="text-lg sm:text-xl md:text-2xl mt-4 text-black">
