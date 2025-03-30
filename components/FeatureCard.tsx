@@ -1,29 +1,34 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 type FeatureCardProps = {
   title: string;
   icon: string;
   description: string;
   variant: string;
-}
+};
 
-const FeatureCard = ({ title, icon, description,variant }: FeatureCardProps) => {
+const FeatureCard = ({ title, icon, description, variant }: FeatureCardProps) => {
   return (
     <li 
-      className="card flex w-full flex-1 flex-col items-start border-b-4" 
-      style={{ borderBottomColor: variant }} 
+      className="card flex flex-col items-start border-b-4 p- cursor-pointer rounded-lg shadow-lg bg-white transition-transform duration-300 hover:scale-105" 
+      style={{ borderBottomColor: variant }}
     >
-      <div>
-        <Image src={icon} alt="map" width={55.02} height={58.73} />
+      {/* Icon */}
+      <div className="w-14 h-14 flex items-center justify-center">
+        <Image src={icon} alt={title} width={55} height={58} />
       </div>
-      <h2 className="bold-16 lg:bold-20 mt-5 capitalize">
+
+      {/* Title */}
+      <h2 className="text-lg font-semibold mt-4 capitalize">
         {title}
       </h2>
-      <p className="regular-14 mt-5  text-[#6D6D6D] lg:mt-[10px]">
+
+      {/* Description */}
+      <p className="text-sm lg:text-base text-gray-600 mt-3">
         {description}
       </p>
     </li>
-  )
-}
+  );
+};
 
-export default FeatureCard; 
+export default FeatureCard;

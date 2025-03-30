@@ -91,8 +91,11 @@
   .regular-32 {
     @apply text-[32px] font-[400];
   }
+  .regular-40 {
+    @apply text-[40px] font-[400];
+  }
   .regular-64 {
-    @apply text-[96px] font-[400] leading-[120%];
+    @apply text-[64px] font-[400] leading-[120%];
   }
   .bold-16 {
     @apply text-[16px] font-[700];
