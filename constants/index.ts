@@ -176,3 +176,52 @@ export  const TABS = [
 ];
 
 
+// Contact SECTION  
+export const ContactInfos = [
+  {
+    title: 'social',
+    contacts: [
+      {
+        title: 'Facebook/Uniest',
+        icon: '/fbIcon.svg',
+        url:'',
+      },
+      {
+        title: 'LinkedIn/Uniest',
+        icon: '/inIcon.svg',
+        url:'',
+      },
+      {
+        title: 'Instagram/Uniest',
+        icon: '/instaIcon.svg',
+        url:'',
+      },
+    ],
+  },
+  {
+    title: 'contact',
+    contacts: [
+      {
+        title: 'Support@Uniest.om',
+        icon: '/emailIcon.svg',
+        url:'',
+      },
+      {
+        title: '+968 91234567',
+        icon: '/call-calling.svg',
+        url:'',
+      },
+    ],
+  },
+  {
+    title: 'address',
+    contacts: [
+      {
+        title: 'Bawshar, Masqaţ, Oman',
+        icon: '/address.svg',
+        url:'',
+      },
+    
+    ],
+  },
+];
