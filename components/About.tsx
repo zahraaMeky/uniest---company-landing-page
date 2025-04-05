@@ -19,7 +19,7 @@ export const About = () => {
               className={`regular-24 capitalize px-5 py-2 block leading-normal transition-all ease-in-out  
                 ${
                   activeTab === tab.id
-                    ? "bold-24 text-transparent bg-clip-text bg-gradient-to-r from-[#E9038A] to-[#0A6195]"
+                    ? "bold-24 text-transparent bg-clip-text bg-gradient-to-r from-[#9B248E] to-[#2D5393] via-[#4A4792]"
                     : "text-gray-500 hover:text-gray-700"
                 }`}
               onClick={() => setActiveTab(tab.id)}
