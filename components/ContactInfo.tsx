@@ -3,7 +3,7 @@ import ContactItem  from './ContactItem ';
 
 const ContactInfo = () => {
   return (
-    <div className="w-full border border-[#D9D9D9] shadow-md rounded-xl px-4 sm:px-6 lg:px-10 py-6">
+    <div>
       {ContactInfos.map((category) => {
         const gridCols =
           category.title === 'social'
