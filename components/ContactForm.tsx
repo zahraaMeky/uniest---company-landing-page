@@ -2,8 +2,20 @@ import Image from "next/image";
 
 export const ContactForm = () => {
   return (
-    <div className="flex justify-between items-center gap-10 px-8 py-12">
-      <form className="flex-1 flex flex-col gap-6">
+    <div className="flex flex-col lg:flex-row justify-between items-center gap-10 px-4 md:px-8 py-12">
+      {/* Image on top for sm/md, right side for lg */}
+      <div className="w-full flex justify-center order-1 lg:order-2">
+        <Image
+          src="/ContactFormImg.svg"
+          width={552}
+          height={690}
+          alt="uniest contact form"
+          className="max-w-full h-auto"
+        />
+      </div>
+
+      {/* Form below image on sm/md, left side on lg */}
+      <form className="w-full max-w-xl flex flex-col gap-6 order-2 lg:order-1">
         {/* Full Name input */}
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Full Name</label>
@@ -57,15 +69,6 @@ export const ContactForm = () => {
           />
         </button>
       </form>
-
-      <div>
-        <Image
-          src="/ContactFormImg.svg"
-          width={552}
-          height={690}
-          alt="uniest contact form"
-        />
-      </div>
     </div>
   );
 };
