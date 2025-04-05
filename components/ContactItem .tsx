@@ -6,7 +6,7 @@ type ContactItemProps = {
 
 const ContactItem = ({ title, icon, url }: ContactItemProps) => {
   return (
-    <div className="flex items-center gap-4 w-full border border-[#D9D9D9] rounded-xl px-4 sm:px-6 md:px-2  md:gap-2  py-3 sm:py-4">
+    <div className="cursor-pointer flex items-center gap-4 w-full border border-[#D9D9D9] rounded-xl px-4 sm:px-6 md:px-2  md:gap-2  py-3 sm:py-4">
       {/* Icon */}
       <img
         src={icon}
