@@ -4,7 +4,7 @@ import { SOCIALS, NAV_LINKS } from '@/constants';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#9B248E]/90 via-[#4A4792]/90 to-[#2D5393]/90 py-10 lg:-mt-10">
+    <footer className="max-container padding-container relative w-full bg-gradient-to-r from-[#9B248E]/90 via-[#4A4792]/90 to-[#2D5393]/90 py-10 lg:-mt-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-8 items-center">
         
         {/* Logo */}
