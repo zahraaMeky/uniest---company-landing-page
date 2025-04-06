@@ -208,7 +208,7 @@ export const ContactInfos = [
       },
       {
         title: '+968 91234567',
-        icon: '/call-calling.svg',
+        icon: '/WhatsappIcon.svg',
         url:'',
       },
     ],
