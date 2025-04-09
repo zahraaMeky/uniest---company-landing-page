@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-10 py-10 pb-20 md:gap-16 lg:py-20 justify-center items-center text-center">
+    <section className="max-container padding-container flex flex-col gap-10 py-10  md:gap-16 lg:py-20 justify-center items-center text-center">
       <div className="relative z-20 flex flex-1 flex-col xl:w-2/3 lg:w-3/4 w-full">
         <h2 className="text-black font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
           Unlock Growth with

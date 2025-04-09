@@ -9,17 +9,17 @@ export const About = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <section className="max-container padding-container relative w-full flex-col items-center justify-start">
+    <section className="max-container padding-container relative w-full flex flex-col items-center justify-start py-10  lg:py-20">
       <div className="w-full">
         {/* Tabs Navigation */}
-        <nav className="flex mb-0 list-none flex-wrap pt-1 pb-2 flex-row border-b border-gray-300">
+        <nav className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-6 border-b border-gray-300 pb-4">
           {TABS.map((tab) => (
             <button
               key={tab.id}
-              className={`regular-24 capitalize px-5 py-2 block leading-normal transition-all ease-in-out  
+              className={`flex flex-col items-center justify-center text-center px-3 sm:px-5 py-2 rounded-md transition-all duration-300 ease-in-out 
                 ${
                   activeTab === tab.id
-                    ? "bold-24 text-transparent bg-clip-text bg-gradient-to-r from-[#9B248E] to-[#2D5393] via-[#4A4792]"
+                    ? "font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#9B248E] via-[#4A4792] to-[#2D5393]"
                     : "text-gray-500 hover:text-gray-700"
                 }`}
               onClick={() => setActiveTab(tab.id)}
@@ -29,58 +29,61 @@ export const About = () => {
               <Image
                 src={activeTab === tab.id ? tab.ActiveImage : tab.DefaultImage}
                 alt={tab.label}
-                width={44}
-                height={44}
-                className="block mx-auto"
+                width={40}
+                height={40}
+                className="mb-1"
               />
-              {tab.label}
+              <span className="text-sm sm:text-base">{tab.label}</span>
             </button>
           ))}
         </nav>
 
-        {/* Tab Content with Smooth Transition */}
-        <div className="relative flex flex-col min-w-0 break-words w-full">
-          <div className="tab-content tab-space py-5 relative">
-            {TABS.map((tab) => (
-              <div
-                key={tab.id}
-                className={`w-full flex flex-col md:flex-row items-start justify-between gap-6 transition-opacity duration-[1200ms] ease-in-out 
-                  ${activeTab === tab.id ? "opacity-100 visible" : "opacity-0 hidden"}`}
-                role="tabpanel"
-                id={`panel-${tab.id}`}
-                aria-labelledby={`tab-${tab.id}`}
-              >
-                {/* Left Section: Paragraph + Button */}
-                <div className="md:w-1/2 flex flex-col items-start gap-4">
-                  <p className="leading-8 mt-5 text-black regular-18 transition-opacity duration-[1200ms] ease-in-out">
+        {/* Tab Content */}
+        <div className="w-full py-6">
+          {TABS.map((tab) => (
+            <div
+              key={tab.id}
+              className={`transition-all duration-1000 ease-in-out 
+                ${activeTab === tab.id ? "opacity-100 visible" : "opacity-0 hidden"}`}
+              role="tabpanel"
+              id={`panel-${tab.id}`}
+              aria-labelledby={`tab-${tab.id}`}
+            >
+              <div className="flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-8 md:gap-12">
+                {/* Left Section */}
+                <div className="w-full md:w-1/2 flex flex-col items-center md:items-start gap-5">
+                  <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
                     {tab.description}
                   </p>
 
-                  {/* Button Below Paragraph */}
-                  <Link
-                    href="/"
-                    className="bold-16 text-black flexCenter cursor-pointer  mt-4
-                    border-2 border-black rounded-xl px-5 py-3 
-                    transition-all duration-500 ease-in-out 
-                    hover:bg-gradient-to-r hover:from-[#9B248E]/90 hover:via-[#4A4792]/90 hover:to-[#2D5393]/90 
-                    hover:text-white hover:border-transparent group"
-                  >
-                    Show More About UNIEST
-                    <MoveRight className="ml-2 transition-all duration-500 ease-in-out text-black group-hover:text-white" />
-                  </Link>
+                  {/* Centered Button for Mobile */}
+                  <div className="w-full flex justify-start ">
+                    <Link
+                      href="/"
+                      className="inline-flex items-center justify-center border-2 border-black text-sm sm:text-base font-semibold px-5 py-3 rounded-xl mt-4
+                        transition-all duration-500 ease-in-out group
+                        hover:bg-gradient-to-r hover:from-[#9B248E]/90 hover:via-[#4A4792]/90 hover:to-[#2D5393]/90
+                        hover:text-white hover:border-transparent"
+                    >
+                      Show More About UNIEST
+                      <MoveRight className="ml-2 transition-all duration-500 text-black group-hover:text-white" />
+                    </Link>
+                  </div>
                 </div>
 
-                {/* Right Section: Image with Smooth Fade & Scale */}
-                <Image
-                  src={tab.image}
-                  width={578}
-                  height={560.2}
-                  alt={tab.label}
-                  className="md:w-1/2 transition-opacity duration-[1200ms] ease-in-out"
-                />
+                {/* Right Section */}
+                <div className="w-full md:w-1/2">
+                  <Image
+                    src={tab.image}
+                    width={578}
+                    height={560}
+                    alt={tab.label}
+                    className="w-full h-auto rounded-md object-contain"
+                  />
+                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

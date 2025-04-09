@@ -5,7 +5,7 @@ import { WHYCHOOSE } from '@/constants';
 
 export const WhyChoose = () => {
   return (
-    <section className="max-container padding-container relative w-full flex flex-col items-center justify-start pb-20">
+    <section className="max-container padding-container relative w-full flex flex-col items-center justify-start py-10  lg:py-20 ">
       {/* Responsive Image */}
       <div className="w-52 sm:w-64 md:w-80 lg:w-[417px] mx-auto">
         <Image

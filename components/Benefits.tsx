@@ -3,7 +3,7 @@ import BenefitItem from './BenefitItem';
 
 export const Benefits = () => {
   return (
-    <section className="max-container padding-container relative w-full flex flex-col items-center justify-center py-10 pb-32 lg:py-20">
+    <section className="max-container padding-container relative w-full flex flex-col items-center justify-center py-10  lg:py-20">
         {/* Responsive Title */}
         <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient">
             Key Benefits
