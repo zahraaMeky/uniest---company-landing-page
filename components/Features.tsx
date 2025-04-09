@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 export const Features = () => {
   return (
-    <section className="max-container padding-container relative w-full flex flex-col items-center justify-start py-10  lg:py-20">
+    <section className="max-container padding-container relative w-full flex flex-col items-center justify-start py-5  lg:py-10 mb-20">
       {/* Title */}
       <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient">
         Explore Features

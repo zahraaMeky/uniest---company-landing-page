@@ -9,10 +9,10 @@ export const About = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <section className="max-container padding-container relative w-full flex flex-col items-center justify-start py-10  lg:py-20">
+    <section className="max-container padding-container relative w-full flex flex-col items-center justify-start py-5  lg:py-10">
       <div className="w-full">
         {/* Tabs Navigation */}
-        <nav className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-6 border-b border-gray-300 pb-4">
+        <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-4 mb-6 border-b border-gray-300 pb-4">
           {TABS.map((tab) => (
             <button
               key={tab.id}
@@ -33,7 +33,9 @@ export const About = () => {
                 height={40}
                 className="mb-1"
               />
-              <span className="text-sm sm:text-base">{tab.label}</span>
+              <span className="text-sm sm:text-base md:text-xl lg:text-xl xl:text-2xl">
+                {tab.label}
+              </span>
             </button>
           ))}
         </nav>
