@@ -12,7 +12,8 @@ export const ContactForm = () => {
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log('Data from client', name, email, phoneNumber, company, message);
+    
+    // console.log('Data from client', name, email, phoneNumber, company, message);
   
     try {
       const res = await fetch('/api/contact', {
@@ -31,7 +32,7 @@ export const ContactForm = () => {
   
       const data = await res.json();
       if (res.status === 200) {
-        toast.success("Your message has been sent successfully!", {
+        toast("Your message has been sent successfully!", {
           position: "top-center", // Change position
           style: {
             background: "linear-gradient(to right, #E9038A, #0A6195)", // Gradient background
@@ -43,9 +44,21 @@ export const ContactForm = () => {
           },
         });
         clearForm(); 
-
       }
-      console.log('Response from server:', data);
+      if (res.status === 500) {
+        toast("Your message has failed to send.", {
+          position: "top-center", // Change position
+          style: {
+            background: "linear-gradient(to right, #E9038A, #0A6195)", // Gradient background
+            color: "#fff", // White text color
+            fontSize: "16px", // Custom font size
+            borderRadius: "8px", // Rounded corners
+            padding: "12px", // Padding
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Optional: add shadow
+          },
+        });
+      }
+      // console.log('Response from server:', data);
     } catch (error) {
       console.error('Error sending message:', error);
     }
@@ -120,6 +133,8 @@ export const ContactForm = () => {
             {/* Phone number input */}
             <input
               required
+              pattern="\d{8}"
+              title="Please enter exactly 8 digits"
               type="text"
               placeholder="Enter Phone Number"
               value={phoneNumber}
