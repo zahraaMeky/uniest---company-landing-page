@@ -133,6 +133,7 @@ export const ContactForm = () => {
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Company Name</label>
           <input
+            required
             value={company}
             onChange={(e) => setCompany(e.target.value)}
             type="text"
@@ -145,6 +146,7 @@ export const ContactForm = () => {
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Inquiry</label>
           <textarea
+            required
             onChange={(e) => setMessage(e.target.value)}
             value={message}
             placeholder="Write your message here"
