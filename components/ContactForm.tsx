@@ -1,10 +1,42 @@
 "use client";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import Image from "next/image";
 
 export const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
 
+  const onSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    console.log('Data from client', name, email, phoneNumber, company, message);
+  
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phoneNumber,
+          company,
+          message,
+        }),
+      });
+  
+      const data = await res.json();
+      console.log('Response from server:', data);
+    } catch (error) {
+      console.error('Error sending message:', error);
+    }
+  };
+  
+  
+  
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center gap-10 px-4 md:px-8 py-12">
       {/* Image on top for sm/md, right side for lg */}
@@ -19,11 +51,14 @@ export const ContactForm = () => {
       </div>
 
       {/* Form below image on sm/md, left side on lg */}
-      <form className="w-full lg:w-1/2 max-w-xl flex flex-col gap-4 order-2 lg:order-1 items-center">
+      <form  onSubmit={onSubmit}
+        className="w-full lg:w-1/2 max-w-xl flex flex-col gap-4 order-2 lg:order-1 items-center">
         {/* Full Name input */}
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Full Name</label>
           <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             type="text"
             placeholder="Enter Full Name"
             className="w-full border border-[#E5E7EB] px-4 py-3 rounded-sm shadow-sm"
@@ -34,6 +69,8 @@ export const ContactForm = () => {
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Email Address</label>
           <input
+           value={email}
+           onChange={(e) => setEmail(e.target.value)}
             type="email"
             placeholder="Email Address"
             className="w-full border border-[#E5E7EB] px-4 py-3 rounded-sm shadow-sm"
@@ -71,6 +108,8 @@ export const ContactForm = () => {
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Company Name</label>
           <input
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
             type="text"
             placeholder="Enter Company Name"
             className="w-full border border-[#E5E7EB] px-4 py-3 rounded-sm shadow-sm"
@@ -81,6 +120,8 @@ export const ContactForm = () => {
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Inquiry</label>
           <textarea
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
             placeholder="Write your message here"
             className="w-full border border-[#E5E7EB] px-4 py-3 rounded-sm resize-none min-h-[120px] shadow-sm"
           />
