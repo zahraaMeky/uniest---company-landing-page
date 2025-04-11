@@ -1,6 +1,7 @@
 "use client";
 import { FormEvent, useState } from "react";
 import Image from "next/image";
+import { toast } from "sonner"
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -29,13 +30,34 @@ export const ContactForm = () => {
       });
   
       const data = await res.json();
+      if (res.status === 200) {
+        toast.success("Your message has been sent successfully!", {
+          position: "top-center", // Change position
+          style: {
+            background: "linear-gradient(to right, #E9038A, #0A6195)", // Gradient background
+            color: "#fff", // White text color
+            fontSize: "16px", // Custom font size
+            borderRadius: "8px", // Rounded corners
+            padding: "12px", // Padding
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Optional: add shadow
+          },
+        });
+        clearForm(); 
+
+      }
       console.log('Response from server:', data);
     } catch (error) {
       console.error('Error sending message:', error);
     }
   };
   
-  
+  const clearForm = () => {
+    setName("");
+    setEmail("");
+    setPhoneNumber("");
+    setCompany("");
+    setMessage("");
+  };
   
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center gap-10 px-4 md:px-8 py-12">
@@ -57,6 +79,7 @@ export const ContactForm = () => {
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Full Name</label>
           <input
+            required
             value={name}
             onChange={(e) => setName(e.target.value)}
             type="text"
@@ -69,6 +92,7 @@ export const ContactForm = () => {
         <div className="flex flex-col gap-2 w-full">
           <label className="text-black font-medium text-base">Email Address</label>
           <input
+           required
            value={email}
            onChange={(e) => setEmail(e.target.value)}
             type="email"
@@ -95,6 +119,7 @@ export const ContactForm = () => {
 
             {/* Phone number input */}
             <input
+              required
               type="text"
               placeholder="Enter Phone Number"
               value={phoneNumber}

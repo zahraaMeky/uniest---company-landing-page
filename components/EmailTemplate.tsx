@@ -23,6 +23,8 @@ const EmailTemplate = ({
         backgroundColor: '#f4f4f4',
         color: '#333',
         borderRadius: '8px',
+        maxWidth: '600px',
+        margin: '0 auto',
       }}
     >
       {/* Header */}
@@ -34,7 +36,14 @@ const EmailTemplate = ({
       </p>
 
       {/* Submission Details */}
-      <table style={{ width: '100%', borderCollapse: 'collapse', backgroundColor: '#fff' }}>
+      <table
+        style={{
+          width: '100%',
+          borderCollapse: 'collapse',
+          backgroundColor: '#fff',
+          marginBottom: '20px',
+        }}
+      >
         <tbody>
           <tr>
             <td style={labelStyle}>👤 Name:</td>
@@ -44,14 +53,18 @@ const EmailTemplate = ({
             <td style={labelStyle}>📧 Email:</td>
             <td style={valueStyle}>{email}</td>
           </tr>
-          <tr>
-            <td style={labelStyle}>📱 Phone:</td>
-            <td style={valueStyle}>{phoneNumber}</td>
-          </tr>
-          <tr>
-            <td style={labelStyle}>🏢 Company:</td>
-            <td style={valueStyle}>{company}</td>
-          </tr>
+          {phoneNumber && (
+            <tr>
+              <td style={labelStyle}>📱 Phone:</td>
+              <td style={valueStyle}>{phoneNumber}</td>
+            </tr>
+          )}
+          {company && (
+            <tr>
+              <td style={labelStyle}>🏢 Company:</td>
+              <td style={valueStyle}>{company}</td>
+            </tr>
+          )}
           <tr>
             <td style={labelStyle}>📝 Message:</td>
             <td style={valueStyle}>{message}</td>
