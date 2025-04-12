@@ -1,6 +1,7 @@
 import ContactBanner from '@/components/ContactBanner';
 import { ContactForm } from '@/components/ContactForm';
 import ContactInfo from '@/components/ContactInfo';
+import GoogleMaps from '@/components/GoogleMaps';
 import { Newsletters } from '@/components/Newsletters';
 
 
@@ -12,6 +13,7 @@ const Contact = () => {
       <div className='w-full border border-[#D9D9D9] shadow-md rounded-xl px-4 sm:px-6 lg:px-10 py-6'>
         <ContactForm/>
         <ContactInfo/>
+        <GoogleMaps/>
       </div>
       <div className='mt-10'>
         <Newsletters/>
