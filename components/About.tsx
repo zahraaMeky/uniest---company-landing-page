@@ -16,7 +16,7 @@ export const About = () => {
           {TABS.map((tab) => (
             <button
               key={tab.id}
-              className={`flex flex-col items-center justify-center text-center px-3 sm:px-5 py-2 rounded-md transition-all duration-300 ease-in-out 
+              className={`cursor-pointer flex flex-col items-center justify-center text-center px-3 sm:px-5 py-2 rounded-md transition-all duration-300 ease-in-out 
                 ${
                   activeTab === tab.id
                     ? "font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#9B248E] via-[#4A4792] to-[#2D5393]"
