@@ -39,7 +39,7 @@ export const Footer = () => {
           <div className="flex justify-center">
             <ul className="flex gap-4 md:gap-6">
               {SOCIALS.map((social) => (
-                <li key={social.title}>
+                <li key={social.title} className='transition-transform duration-300 hover:scale-105'>
                   <Link href={social.link}>
                     <Image src={social.icon} alt={social.title} width={40} height={40} className="w-10 h-10 md:w-14 md:h-14" />
                   </Link>

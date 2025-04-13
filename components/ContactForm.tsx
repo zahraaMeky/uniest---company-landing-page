@@ -172,7 +172,7 @@ export const ContactForm = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="mt-2 w-full font-semibold flex items-center justify-center gap-2 bg-gradient-to-r from-[#9B248E] to-[#2D5393] via-[#4A4792] text-white px-6 py-3 rounded-sm hover:opacity-90 transition"
+          className="cursor-pointer  mt-2 w-full font-semibold flex items-center justify-center gap-2 bg-gradient-to-r from-[#9B248E] to-[#2D5393] via-[#4A4792] text-white px-6 py-3 rounded-sm hover:opacity-90 transition"
         >
           Send Message
           <Image
