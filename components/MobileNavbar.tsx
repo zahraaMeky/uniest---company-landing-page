@@ -54,7 +54,7 @@ const MobileNavbar = ({ showNav, closeNav }: Props) => {
         </div>
 
         {/* Nav Links */}
-        <ul className="flex flex-col gap-6 px-6 py-32 text-lg text-black flex-1">
+        <ul className="flex flex-col gap-6 px-6 py-32 md:py-48 md:text-xl text-lg text-black flex-1">
           {NAV_LINKS.map((link) => (
             <li
               key={link.key}
