@@ -1,19 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import ResponsiveNavbar from "@/components/ResponsiveNavbar";
 import { Toaster } from "@/components/ui/sonner"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const poppins = Poppins({
+  weight: ["400", "600", "700"],  // Customize with the desired font weights
+  subsets: ["latin"],  // You can add more subsets like "latin-ext" if needed
+  variable: "--font-poppins", // Optional: to apply as a CSS variable
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "UNIEST",
@@ -28,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} antialiased`}
       >
         <ResponsiveNavbar/>
         <main className="relative overflow-hidden">
