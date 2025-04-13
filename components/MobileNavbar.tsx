@@ -1,82 +1,102 @@
-import Link from "next/link"
-import { NAV_LINKS } from "@/constants"
-import Image from "next/image"
-import Button from "./Button"
+import Link from "next/link";
+import { NAV_LINKS } from "@/constants";
+import Image from "next/image";
+import Button from "./Button";
+import router from "next/router";
 
 type Props = {
-  showNav: boolean
-  closeNav: () => void
-}
+  showNav: boolean;
+  closeNav: () => void;
+};
 
+const handleGetStarted = () => {
+  closeNav();
+  router.push("/contact"); 
+};
 const MobileNavbar = ({ showNav, closeNav }: Props) => {
-    const openNav = showNav ? 'translate-x-0':'translate-x-[-100%]'
+  const navVisibility = showNav ? "translate-x-0" : "-translate-x-full";
+
   return (
     <>
       {/* Overlay */}
+      {showNav && (
         <div
-          className={`fixed ${openNav} inset-0 z-[1002] bg-black opacity-70 w-full h-screen`}
+          className="fixed inset-0 z-[1001] bg-black/70 backdrop-blur-sm"
+          onClick={closeNav}
         />
-    
+      )}
 
-      {/* Mobile Nav */}
+      {/* Mobile Navigation */}
       <nav
-        className={`fixed  ${openNav} top-0 left-0 h-full z-[1050] w-[80%] sm:w-[60%] transform transition-transform duration-500 ease-in-out
-        bg-gradient-to-r from-[#9B248E]/90 via-[#4A4792]/90 to-[#2D5393]/90
-        flex flex-col justify-between`}
+        className={`fixed ${navVisibility} top-0 left-0 h-full z-[1050] w-[80%] sm:w-[60%] transform transition-transform duration-500 ease-in-out bg-white flex flex-col justify-between shadow-xl`}
+        role="dialog"
+        aria-modal="true"
       >
-        {/* Header: Logo & Close Button */}
-        <div className="flex justify-between items-center px-6 pt-6">
-          <Link href='/'  onClick={closeNav}>
-            <Image 
-              src="/uniest2.svg"
-              alt="uniest logo"
-              width={185}
-              height={56}
-              className="h-10 sm:h-14 md:h-16 lg:h-20"
+        {/* Header: Logo + Close */}
+        <div className="flex items-center justify-between px-6 pt-6">
+          <Link href="/" onClick={closeNav}>
+            <Image
+              src="/uniest-logo-Mobile-Nav.svg"
+              alt="Uniest logo"
+              width={141}
+              height={42.68}
+              priority
             />
           </Link>
-
-          <button
-            onClick={closeNav}
-            className="text-white sm:w-8 sm:h-8 w-6 h-6 focus:outline-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none" viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-full h-full"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
+          <button onClick={closeNav} aria-label="Close navigation menu">
+            <Image
+              src="/closeButton.svg"
+              alt="Close"
+              width={22}
+              height={22}
+            />
           </button>
         </div>
 
         {/* Nav Links */}
-        <ul className="flex flex-col items-start justify-center px-6 py-12 gap-6 text-lg text-white flex-1">
+        <ul className="flex flex-col gap-6 px-6 py-32 text-lg text-black flex-1">
           {NAV_LINKS.map((link) => (
-            <li key={link.key}>
-              <Link href={link.href} className="hover:text-pink-200 transition-colors"  onClick={closeNav}>
+            <li
+              key={link.key}
+              className="flex justify-between items-center w-full  p-2"
+            >
+              <Image src={link.icon} alt={link.label} width={24} height={24} />
+              <Link
+                href={link.href}
+                className="flex-1 ml-4 text-transparent bg-clip-text bg-gradient-multiColor font-medium tesxt-[20px]"
+                onClick={closeNav}
+              >
                 {link.label}
               </Link>
+              <Image
+                src="/NavArrowIcon.svg"
+                alt="Arrow icon"
+                width={14}
+                height={17}
+              />
             </li>
           ))}
         </ul>
 
-        {/* Footer Button */}
+        {/* CTA Button */}
         <div className="px-6 pb-8">
-          <Button 
+          <Button
             type="button"
             title="Get Started"
             icon="/getStartBtnIcon.svg"
-            variant="glass"
+            variant="bg-gradient"
             textColor="text-white"
-            className="w-full py-4 border border-white/30 rounded-2xl backdrop-blur-md bg-white/10 hover:bg-white/20 transition-all"
+            className="w-full py-4 border-0 rounded-xl shadow-lg"
+            onClick={handleGetStarted}
           />
         </div>
       </nav>
     </>
-  )
+  );
+};
+
+export default MobileNavbar;
+function closeNav() {
+  throw new Error("Function not implemented.");
 }
 
-export default MobileNavbar

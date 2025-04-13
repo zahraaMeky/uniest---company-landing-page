@@ -4,14 +4,15 @@ import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
-import { usePathname } from 'next/navigation'
-
+import { usePathname} from 'next/navigation'
+import router from "next/router";
 type Props = {
   openNav: () => void
 }
 
 export const Navbar = ({ openNav }: Props) => {
   const pathName = usePathname()
+
 
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
@@ -32,7 +33,7 @@ export const Navbar = ({ openNav }: Props) => {
             <Link
               href={link.href}
               key={link.key}
-              className="regular-16 flexCenter cursor-pointer transition-all"
+              className="regular-16 font-semibold flexCenter cursor-pointer transition-all"
             >
               <span className={`px-4 py-2 rounded-full transition-all ${
                 isActive
@@ -41,7 +42,7 @@ export const Navbar = ({ openNav }: Props) => {
               }`}>
                 <span className={`${
                   isActive
-                    ? 'bg-gradient-to-r from-[#E3058A] to-[#0A6195] text-transparent bg-clip-text font-semibold'
+                    ? 'text-transparent bg-clip-text bg-gradient-multiColor font-bold'
                     : ''
                 }`}>
                   {link.label}
@@ -60,6 +61,7 @@ export const Navbar = ({ openNav }: Props) => {
           variant="bg-gradient"
           textColor="text-white"
           className="px-8 py-4 border-0 rounded-2xl"
+          onClick={() => router.push("/contact")}
         />
       </div>
 

@@ -8,6 +8,7 @@ type ButtonProps = {
   textColor?: string;
   className?: string; 
   icon?: string;
+  onClick: () => void;
   
 }
 
