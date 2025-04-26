@@ -241,3 +241,55 @@ export const ContactInfos = [
     ],
   },
 ];
+
+// Ecosystem SECTION
+export const Ecosystems = [
+  {
+    title: 'SMEs',
+    icon: '/SMEsIcon.svg',
+    description:
+      'Growth-focused businesses seeking equity-based investments to scale operations, drive innovation, improve competitiveness, and access smart, tech-enabled funding solutions tailored for expansion.',
+  },
+  {
+    title: 'Investors',
+    icon: '/investorIcon.svg',
+    description:
+      "Includes individuals, angels, venture capitalists, private equity firms, and institutions actively backing high-potential ventures with capital, mentorship, strategic market guidance, and long-term vision.",
+  },
+  {
+    title: 'Regulatory Bodies',
+    icon: '/RegulatoryIcon.svg',
+    description:
+      'Ensure full compliance with international standards, including strict AML/KYC protocols, data protection, investor safeguards, and transparent governance frameworks across all jurisdictions.',
+  },
+  {
+    title: 'Technology Partners',
+    icon: '/TechnologyIcon.svg',
+    description:
+      'Collaborate with blockchain, AI, and cybersecurity experts to enhance platform security, scalability, automation, user experience, and long-term technological innovation and resilience.',
+  },
+ 
+
+]
+
+// Partnership SECTION
+export const Partnership = [
+  {
+    title: 'Financial Institutions',
+    icon: '/FinancialIcon.svg',
+    description:
+      'Partnerships with banks and fintechs to deliver enhanced liquidity solutions, flexible funding options, and seamless capital flows.',
+  },
+  {
+    title: 'Accelerators & Incubators',
+    icon: '/AcceleratorsIcon.svg',
+    description:
+      "Collaborations to identify, onboard, and support high-potential SMEs with resources, mentorship, and funding readiness.",
+  },
+  {
+    title: 'Tokenization Platforms',
+    icon: '/TokenizationIcon.svg',
+    description:
+      'Integration to enable fractional ownership, improve asset liquidity, and broaden global investor access to equity opportunities.',
+  },
+]

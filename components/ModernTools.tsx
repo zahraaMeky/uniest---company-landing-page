@@ -1,0 +1,80 @@
+import Image from "next/image";
+
+export const ModernTools = () => {
+  return (
+    <div className="max-container padding-container w-full flex flex-col items-center justify-start py-5 lg:py-10 mb-10 text-center">
+      
+      {/* Heading Section */}
+      <div className="flex flex-col gap-4 justify-center">
+        
+        {/* Title with lines */}
+        <h4 className="relative text-black text-base sm:text-lg text-center">
+          <span className="flex items-center justify-center gap-3">
+            <span className="h-[0.1rem] w-[165px] bg-gradient-to-r from-[#0D0D0D]/5 to-[#D70A8B]/100 rounded-full" />
+            Offerings & Features
+            <span className="h-[0.1rem] w-[165px] bg-gradient-to-r from-[#D70A8B]/100 to-[#0D0D0D]/5 rounded-full" />
+          </span>
+        </h4>
+
+        {/* Gradient Heading */}
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+          Modern Tools for{" "}
+          <span className="bg-gradient-to-r from-[#E3058A] to-[#0A6195] text-transparent bg-clip-text">
+            Smarter SME Growth
+          </span>
+        </h2>
+
+        {/* Description */}
+        <div className="max-w-lg text-center mx-auto">
+          <p className="text-black text-sm sm:text-base leading-relaxed">
+            Explore smart financing tools designed to unlock capital, reduce friction, and support SME growth.
+          </p>
+        </div>
+      </div>
+
+      {/* Offerings Section */}
+      <div className="bg-[#FDEBFF] mt-10 w-full rounded-2xl p-6 md:p-10 shadow-md">
+        <div className="flex items-center gap-3 mb-6">
+          <Image src="/profile-2user.svg" alt="Alternative Financing Solutions" width={32} height={32} />
+          <h3 className="text-[#2F3B59] font-semibold text-lg">Alternative Financing Solutions:</h3>
+        </div>
+
+        {/* Financing Options List */}
+        <div className="flex flex-col gap-6 text-left">
+          {/* Option 1 */}
+          <div className="flex gap-2">
+            <p className="text-[#2F3B59] text-sm">a. Invoice Financing:</p>
+            <p className="text-[#2F3B59] text-sm">
+              Unlocks cash flow by allowing SMEs to get early payments on outstanding invoices.
+            </p>
+          </div>
+
+          {/* Option 2 */}
+          <div className="flex gap-2">
+            <p className="text-[#2F3B59] text-sm">b. Revenue-Based Financing:</p>
+            <p className="text-[#2F3B59] text-sm">
+              Provides capital based on business performance.
+            </p>
+          </div>
+
+          {/* Option 3 */}
+          <div className="flex gap-2">
+            <p className="text-[#2F3B59] text-sm">c. Short-Term Investment:</p>
+            <p className="text-[#2F3B59] text-sm">
+              Quick access to working capital with minimal documentation and competitive processing cost.
+            </p>
+          </div>
+
+          {/* Option 4 */}
+          <div className="flex gap-2">
+            <p className="text-[#2F3B59] text-sm">d. Supply Chain Financing:</p>
+            <p className="text-[#2F3B59] text-sm">
+              Helps businesses manage cash flow efficiently by optimizing supplier and buyer payment cycles.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  );
+};
