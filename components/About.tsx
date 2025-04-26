@@ -61,7 +61,7 @@ export const About = () => {
                   {/* Centered Button for Mobile */}
                   <div className="w-full flex justify-start ">
                     <Link
-                      href="/"
+                      href="/about"
                       className="inline-flex items-center justify-center border-2 border-black text-sm sm:text-base font-semibold px-5 py-3 rounded-xl mt-4
                         transition-all duration-500 ease-in-out group
                         hover:bg-gradient-to-r hover:from-[#9B248E]/90 hover:via-[#4A4792]/90 hover:to-[#2D5393]/90
