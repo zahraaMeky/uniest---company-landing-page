@@ -4,7 +4,7 @@ import PartnershipCard from "./PartnershipCard";
 
 export const Partnerships = () => {
   return (
-    <div  className="max-container padding-container w-full flex flex-col items-center justify-start  py-5  lg:py-10 mb-20 text-center">
+    <div  className="max-container padding-container w-full flex flex-col items-center justify-start  py-5  lg:py-10 mb-10 text-center">
         <div className="flex flex-col gap-4 justify-center">
             {/* Title with lines */}
             <h4 className="relative text-black text-base sm:text-lg text-center">

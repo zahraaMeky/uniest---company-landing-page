@@ -32,7 +32,7 @@ export const Ceo = () => {
       </div>
 
       {/* CEO Message Section */}
-      <div className="flex flex-col lg:flex-row gap-10 justify-between items-center mt-10">
+      <div className="flex flex-col lg:flex-row gap-10 justify-between items-center mt-20">
         {/* CEO Text Message */}
         <div className="flex flex-col gap-5 items-start justify-start w-full lg:w-1/2">
           <h4 className="relative text-black text-base sm:text-lg">

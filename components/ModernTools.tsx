@@ -35,7 +35,7 @@ export const ModernTools = () => {
       </div>
 
       {/* Offerings Section */}
-      <div className="bg-[#FDEBFF] mt-10 w-full rounded-2xl p-6 md:p-10 shadow-md">
+      <div className="bg-[#FDEBFF]  w-full rounded-2xl p-6 md:p-10 shadow-md mt-20">
         <div>
           <div className="flex items-center gap-3 mb-6">
             <Image src="/profile-2user.svg" alt="Alternative Financing Solutions" width={32} height={32} />

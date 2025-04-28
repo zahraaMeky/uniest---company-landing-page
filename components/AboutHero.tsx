@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const AboutHero = () => {
   return (
-    <section className="w-full relative bg-[url('/aboutbg.svg')] bg-cover bg-center bg-no-repeat max-container padding-container">
+    <section className="w-full relative bg-[url('/aboutbg.svg')] bg-cover bg-center bg-no-repeat max-container padding-container mb-20">
       <div className="max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
         
         {/* Text Content */}
