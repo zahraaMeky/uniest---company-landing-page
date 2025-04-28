@@ -12,7 +12,7 @@ const About = () => {
       <Partnerships/>
       <ModernTools/>
       <Ceo/>
-    <div className=' max-container padding-container mb-20'>
+    <div className='max-container padding-container mb-20'>
       <Newsletters/>
     </div>
     </section>

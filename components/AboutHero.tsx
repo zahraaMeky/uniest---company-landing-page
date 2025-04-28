@@ -13,10 +13,10 @@ export const AboutHero = () => {
         <div className="w-full lg:w-1/2">
           <h4 className="text-[#585858] text-xl font-medium">About Us</h4>
           <h3 className="text-black text-3xl md:text-5xl font-bold leading-tight">
-            Building <span className="text-[#744F9B]">a Smarter</span>
+            Building <span className="bg-gradient-multiColor text-transparent bg-clip-text">a Smarter</span>
           </h3>
           <h3 className="text-black text-3xl md:text-5xl font-bold leading-tight">
-            <span className="text-[#E3058A]">Investment</span> Ecosystem
+            <span className="bg-gradient text-transparent bg-clip-text">Investment</span> Ecosystem
           </h3>
           <p className="text-[#585858] mt-4 max-w-2xl text-base leading-relaxed">
             UNIEST is a cutting-edge technology company based in Oman with a multinational culture and global resources. It’s a promising fintech venture targeting SMEs by offering alternative funding solutions. UNIEST provides faster, more accessible, and flexible financing options to help SMEs scale efficiently.

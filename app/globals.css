@@ -25,7 +25,7 @@
     background-position: center;
   }
   .card{
-    @apply rounded-t-2xl  bg-[#EFEFEF] px-6 py-4
+    @apply rounded-t-2xl  bg-[#EFEFEF] px-5 py-6
   }
   .bg-gradient {
     @apply bg-gradient-to-r from-[#E9038A] to-[#0A6195] ;
