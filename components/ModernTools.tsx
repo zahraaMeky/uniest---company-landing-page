@@ -67,7 +67,7 @@ export const ModernTools = () => {
             </div>
           </div>
         </div>
-        <hr className="h-px md:w-lg lg:w-4xl w-3xs mx-auto my-8 bg-[#8C9ABF] border-0"/>
+        <hr className="h-[0.5px] md:w-lg lg:w-4xl w-3xs mx-auto my-8 bg-[#8C9ABF] border-0"/>
 
         {/* ModernTool Grid */}
         <ul className="mt-10 grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full">
