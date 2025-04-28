@@ -21,7 +21,7 @@ export const Ecosystem = () => {
         </h2>
 
         {/* Description */}
-        <div className="max-w-lg text-center mx-auto">
+        <div className="lg:max-w-lg text-center mx-auto w-full">
           <p className="text-black text-sm sm:text-base leading-relaxed">
             The UNIEST Platform's ecosystem includes a range of stakeholders and partnerships 
             to ensure scalability, trust, and operational efficiency.

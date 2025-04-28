@@ -28,7 +28,7 @@ export const AboutHero = () => {
             className="inline-flex items-center justify-center border-2 border-black text-sm sm:text-base font-semibold px-5 py-3 rounded-xl mt-6
             transition-all duration-500 ease-in-out group
             hover:bg-gradient-to-r hover:from-[#9B248E]/90 hover:via-[#4A4792]/90 hover:to-[#2D5393]/90
-            hover:text-white hover:border-transparent"
+            hover:text-white hover:border-transparent mb-6 md:mb-8"
           >
             Join Our Ecosystem
             <MoveRight className="ml-2 transition-all duration-500 text-black group-hover:text-white" />
