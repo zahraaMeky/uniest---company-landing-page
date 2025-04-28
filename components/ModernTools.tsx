@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { ModernTool } from "@/constants";
+import ModernToolsCard from "./ModernToolsCard";
 
 export const ModernTools = () => {
   return (
@@ -34,47 +36,64 @@ export const ModernTools = () => {
 
       {/* Offerings Section */}
       <div className="bg-[#FDEBFF] mt-10 w-full rounded-2xl p-6 md:p-10 shadow-md">
-        <div className="flex items-center gap-3 mb-6">
-          <Image src="/profile-2user.svg" alt="Alternative Financing Solutions" width={32} height={32} />
-          <h3 className="text-[#2F3B59] font-semibold text-lg">Alternative Financing Solutions:</h3>
+        <div>
+          <div className="flex items-center gap-3 mb-6">
+            <Image src="/profile-2user.svg" alt="Alternative Financing Solutions" width={32} height={32} />
+            <h3 className="text-[#2F3B59] font-semibold text-lg">Alternative Financing Solutions:</h3>
+          </div>
+          {/* Financing Options List */}
+          <div className="flex flex-col gap-4 text-left">
+            {/* Option 1 */}
+            <div className="flex gap-2">
+              <p className="text-[#2F3B59] text-sm">a. Invoice Financing:</p>
+              <p className="text-[#2F3B59] text-sm">
+                Unlocks cash flow by allowing SMEs to get early payments on outstanding invoices.
+              </p>
+            </div>
+
+            {/* Option 2 */}
+            <div className="flex gap-2">
+              <p className="text-[#2F3B59] text-sm">b. Revenue-Based Financing:</p>
+              <p className="text-[#2F3B59] text-sm">
+                Provides capital based on business performance.
+              </p>
+            </div>
+
+            {/* Option 3 */}
+            <div className="flex gap-2">
+              <p className="text-[#2F3B59] text-sm">c. Short-Term Investment:</p>
+              <p className="text-[#2F3B59] text-sm">
+                Quick access to working capital with minimal documentation and competitive processing cost.
+              </p>
+            </div>
+
+            {/* Option 4 */}
+            <div className="flex gap-2">
+              <p className="text-[#2F3B59] text-sm">d. Supply Chain Financing:</p>
+              <p className="text-[#2F3B59] text-sm">
+                Helps businesses manage cash flow efficiently by optimizing supplier and buyer payment cycles.
+              </p>
+            </div>
+          </div>
         </div>
+        <hr className="h-px w-4xl mx-auto my-8 bg-[#8C9ABF] border-0"/>
 
-        {/* Financing Options List */}
-        <div className="flex flex-col gap-6 text-left">
-          {/* Option 1 */}
-          <div className="flex gap-2">
-            <p className="text-[#2F3B59] text-sm">a. Invoice Financing:</p>
-            <p className="text-[#2F3B59] text-sm">
-              Unlocks cash flow by allowing SMEs to get early payments on outstanding invoices.
-            </p>
-          </div>
-
-          {/* Option 2 */}
-          <div className="flex gap-2">
-            <p className="text-[#2F3B59] text-sm">b. Revenue-Based Financing:</p>
-            <p className="text-[#2F3B59] text-sm">
-              Provides capital based on business performance.
-            </p>
-          </div>
-
-          {/* Option 3 */}
-          <div className="flex gap-2">
-            <p className="text-[#2F3B59] text-sm">c. Short-Term Investment:</p>
-            <p className="text-[#2F3B59] text-sm">
-              Quick access to working capital with minimal documentation and competitive processing cost.
-            </p>
-          </div>
-
-          {/* Option 4 */}
-          <div className="flex gap-2">
-            <p className="text-[#2F3B59] text-sm">d. Supply Chain Financing:</p>
-            <p className="text-[#2F3B59] text-sm">
-              Helps businesses manage cash flow efficiently by optimizing supplier and buyer payment cycles.
-            </p>
-          </div>
-        </div>
+        {/* ModernTool Grid */}
+        <ul className="mt-10 grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full">
+          {ModernTool.map((tool, index) => (
+            <div className="flex items-center" key={tool.title}> {/* Add key here */}
+              <ModernToolsCard
+                title={tool.title}
+                icon={tool.icon}
+                description={tool.description}
+              />
+              {(index === 0 || index === 1) && (
+                <div className="h-16 w-px bg-[#8C9ABF] mx-3 hidden sm:block" />
+              )}
+            </div>
+          ))}
+        </ul>
       </div>
-
     </div>
   );
 };

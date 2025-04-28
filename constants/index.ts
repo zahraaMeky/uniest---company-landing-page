@@ -293,3 +293,31 @@ export const Partnership = [
       'Integration to enable fractional ownership, improve asset liquidity, and broaden global investor access to equity opportunities.',
   },
 ]
+
+// ModernTools SECTION
+export const ModernTool = [
+  {
+    title: 'AI-Driven Credit Scoring:',
+    icon: '/light-bulb.svg',
+    description: [
+      'a.	Uses ML to assess SME creditworthiness beyond norms.',
+      'b. Analyzes real-time performance, transactions, and market trends.',
+    ],
+  },
+  {
+    title: 'Seamless Digital Onboarding:',
+    icon: '/risk-assessment.svg',
+    description: [
+      'a.	Quick and hassle-free application process via a user-friendly platform.',
+      'b.	Minimal paperwork with real-time approvals for faster, hassle-free funding.',
+    ],
+  },
+  {
+    title: 'Risk Management & Security:',
+    icon: '/like.svg',
+    description: [
+      'a. Blockchain-based transaction tracking for transparency.',
+      'b. Smart contracts to automate investing and returns.',
+    ],
+  },
+]
