@@ -3,11 +3,11 @@ import EcosystemCard from "./EcosystemCard";
 
 export const Ecosystem = () => {
   return (
-    <div className="max-container padding-container w-full flex flex-col items-center justify-start  py-5  lg:py-10 mb-10 text-center">
+    <div className="relative max-container padding-container w-full flex flex-col items-center justify-start  py-5  lg:py-10 mb-10 text-center">
       <div className="flex flex-col gap-4 justify-center">
-
+ 
         {/* Title with lines */}
-        <h4 className="relative text-black text-base sm:text-lg text-center">
+        <h4 className="text-black text-base sm:text-lg text-center">
             <span className="flex items-center justify-center gap-3">
                 <span className="h-[0.1rem] w-[165px] bg-gradient-to-r from-[#0D0D0D]/5 to-[#D70A8B]/100  rounded-full" />
                 Our Ecosystem & Key Stakeholders
@@ -21,7 +21,7 @@ export const Ecosystem = () => {
         </h2>
 
         {/* Description */}
-        <div className="lg:max-w-lg text-center mx-auto w-full">
+        <div className="max-w-lg text-center mx-auto px-10 sm:px-6 md:px-0">
           <p className="text-black text-sm sm:text-base leading-relaxed">
             The UNIEST Platform's ecosystem includes a range of stakeholders and partnerships 
             to ensure scalability, trust, and operational efficiency.

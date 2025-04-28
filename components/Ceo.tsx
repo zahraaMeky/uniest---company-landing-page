@@ -3,11 +3,11 @@ import React from "react";
 
 export const Ceo = () => {
   return (
-    <div className="max-container padding-container w-full flex flex-col items-center justify-start py-5 lg:py-10 mb-10 text-center">
+    <div className="max-container padding-container relative w-full flex flex-col items-center justify-start py-5 lg:py-10 mb-10 text-center">
       {/* Heading Section */}
       <div className="flex flex-col gap-4 justify-center">
         {/* Title with gradient lines */}
-        <h4 className="relative text-black text-base sm:text-lg text-center">
+        <h4 className="text-black text-base sm:text-lg text-center">
           <span className="flex items-center justify-center gap-3">
             <span className="h-[0.1rem] w-[165px] bg-gradient-to-r from-[#0D0D0D]/5 to-[#D70A8B]/100 rounded-full" />
             Future of Funding
@@ -24,7 +24,7 @@ export const Ceo = () => {
         </h2>
 
         {/* Description */}
-        <div className="max-w-lg text-center mx-auto">
+        <div className="max-w-lg text-center mx-auto px-10 sm:px-6 md:px-0">
           <p className="text-black text-sm sm:text-base leading-relaxed">
             At UNIEST, we’re redefining funding, empowering SMEs to grow, innovate, and lead.
           </p>
@@ -32,7 +32,7 @@ export const Ceo = () => {
       </div>
 
       {/* CEO Message Section */}
-      <div className="flex flex-col lg:flex-row gap-10 justify-between items-center mt-20">
+      <div className="flex flex-col lg:flex-row gap-10 justify-between items-center md:mt-20 mt-10">
         {/* CEO Text Message */}
         <div className="flex flex-col gap-5 items-start justify-start w-full lg:w-1/2">
           <h4 className="relative text-black text-base sm:text-lg">
@@ -41,7 +41,7 @@ export const Ceo = () => {
               <span className="text-sm sm:text-lg -mt-0.5 bg-gradient-to-r from-[#E3058A] to-[#0A6195] text-transparent bg-clip-text">Our CEO Message</span>
 
               {/* Gradient Line */}
-              <span className="h-[1px] w-80 bg-gradient-to-r from-[#D70A8B] to-[#0A6195]  rounded-full" />
+              <span className="h-[1px] md:w-80 w-40 bg-gradient-to-r from-[#D70A8B] to-[#0A6195]  rounded-full" />
             </span>
           </h4>
 

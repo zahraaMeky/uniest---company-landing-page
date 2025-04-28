@@ -16,12 +16,12 @@ export const Partnerships = () => {
             </h4>
 
             {/* Gradient Heading */}
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight px-8 sm:px-6 md:px-0">
             Strategic Partnerships That <span className="bg-gradient-to-r from-[#E3058A] to-[#0A6195] text-transparent bg-clip-text">Unlock Value</span>
             </h2>
 
             {/* Description */}
-            <div className="max-w-lg text-center mx-auto">
+            <div className="max-w-lg text-center mx-auto px-10 sm:px-6 md:px-0">
             <p className="text-black text-sm sm:text-base leading-relaxed">
             We collaborate with financial leaders, accelerators, and tech innovators to deliver smarter funding 
             greater access, and scalable impact for SMEs.
@@ -29,7 +29,7 @@ export const Partnerships = () => {
             </div>
         </div>
           {/* Partnership Grid */}
-        <ul className="mt-20 grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
+        <ul className="mt-20 grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 w-full max-w-6xl">
             {Partnership.map((partner) => (
             <PartnershipCard
                 key={partner.title}

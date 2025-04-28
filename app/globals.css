@@ -18,6 +18,7 @@
   @apply px-6 lg:px-20 2xl:px-0;
 }
 
+
 @layer utilities {
   .bg-contact {
     background-image: url('/contactBG.svg');

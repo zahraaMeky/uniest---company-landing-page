@@ -27,7 +27,7 @@ export const ModernTools = () => {
         </h2>
 
         {/* Description */}
-        <div className="max-w-lg text-center mx-auto">
+        <div className="max-w-lg text-center mx-auto px-10 sm:px-6 md:px-0">
           <p className="text-black text-sm sm:text-base leading-relaxed">
             Explore smart financing tools designed to unlock capital, reduce friction, and support SME growth.
           </p>
@@ -39,44 +39,35 @@ export const ModernTools = () => {
         <div>
           <div className="flex items-center gap-3 mb-6">
             <Image src="/profile-2user.svg" alt="Alternative Financing Solutions" width={32} height={32} />
-            <h3 className="text-[#2F3B59] font-semibold text-lg">Alternative Financing Solutions:</h3>
+            <h3 className="text-[#2F3B59] font-semibold md:text-lg text-base text-left">Alternative Financing Solutions:</h3>
           </div>
           {/* Financing Options List */}
           <div className="flex flex-col gap-4 text-left">
             {/* Option 1 */}
-            <div className="flex gap-2">
-              <p className="text-[#2F3B59] text-sm">a. Invoice Financing:</p>
-              <p className="text-[#2F3B59] text-sm">
-                Unlocks cash flow by allowing SMEs to get early payments on outstanding invoices.
+            <div className="text-left">
+              <p className="text-[#2F3B59] text-sm">a. Invoice Financing: Unlocks cash flow by allowing SMEs to get early payments on outstanding invoices.
               </p>
             </div>
 
             {/* Option 2 */}
-            <div className="flex gap-2">
-              <p className="text-[#2F3B59] text-sm">b. Revenue-Based Financing:</p>
-              <p className="text-[#2F3B59] text-sm">
-                Provides capital based on business performance.
-              </p>
+            <div className="text-left">
+              <p className="text-[#2F3B59] text-sm">b. Revenue-Based Financing: Provides capital based on business performance.</p>
             </div>
 
             {/* Option 3 */}
-            <div className="flex gap-2">
-              <p className="text-[#2F3B59] text-sm">c. Short-Term Investment:</p>
-              <p className="text-[#2F3B59] text-sm">
-                Quick access to working capital with minimal documentation and competitive processing cost.
+            <div className="text-left">
+              <p className="text-[#2F3B59] text-sm">c. Short-Term Investment: Quick access to working capital with minimal documentation and competitive processing cost.
               </p>
             </div>
 
             {/* Option 4 */}
-            <div className="flex gap-2">
-              <p className="text-[#2F3B59] text-sm">d. Supply Chain Financing:</p>
-              <p className="text-[#2F3B59] text-sm">
-                Helps businesses manage cash flow efficiently by optimizing supplier and buyer payment cycles.
+            <div className="text-left">
+              <p className="text-[#2F3B59] text-sm">d. Supply Chain Financing: Helps businesses manage cash flow efficiently by optimizing supplier and buyer payment cycles.
               </p>
             </div>
           </div>
         </div>
-        <hr className="h-px w-4xl mx-auto my-8 bg-[#8C9ABF] border-0"/>
+        <hr className="h-px md:w-lg lg:w-4xl w-3xs mx-auto my-8 bg-[#8C9ABF] border-0"/>
 
         {/* ModernTool Grid */}
         <ul className="mt-10 grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full">
@@ -87,8 +78,15 @@ export const ModernTools = () => {
                 icon={tool.icon}
                 description={tool.description}
               />
-              {(index === 0 || index === 1) && (
-                <div className="h-16 w-px bg-[#8C9ABF] mx-3 hidden sm:block" />
+             {(index === 0 || index === 1) && (
+                <div
+                  className={`
+                    h-16 w-px bg-[#8C9ABF] mx-3
+                    hidden 
+                    ${index === 0 || index === 1 ? "lg:block" : ""}
+                    ${index === 0 ? "md:block" : ""}
+                  `}
+                />
               )}
             </div>
           ))}

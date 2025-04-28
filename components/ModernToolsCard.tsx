@@ -16,7 +16,7 @@ const ModernToolsCard = ({ title, icon, description }: ModernToolsCardProps) => 
         </div>
 
         {/* Title */}
-        <h2 className="text-lg font-semibold capitalize text-[#2F3B59]">
+        <h2 className="md:text-lg text-base font-semibold capitalize text-[#2F3B59] text-left">
           {title}
         </h2>
       </div>
