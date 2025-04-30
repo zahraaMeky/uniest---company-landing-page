@@ -9,7 +9,7 @@ type EcosystemCardProps = {
 const EcosystemCard = ({ title, icon, description }: EcosystemCardProps) => {
   return (
     <li 
-      className="relative flex flex-col items-center justify-start pt-15 pb-8 px-6 cursor-pointer rounded-lg shadow-lg bg-white border-t-4 border-[#93278F] transition-transform duration-300 hover:scale-105 mb-15 md:mb-0"
+      className="relative flex flex-col items-center justify-start pt-15 pb-8 px-6 cursor-pointer rounded-lg shadow-lg bg-white border-t-4 border-[#93278F] transition-transform duration-300 hover:scale-105 mb-15 md:mb-0 last:mb-0"
     >
       {/* Background Image at top */}
       <Image
@@ -26,7 +26,7 @@ const EcosystemCard = ({ title, icon, description }: EcosystemCardProps) => {
       </h2>
 
       {/* Description */}
-      <p className="text-base text-[#5D5D5D] mt-3 text-center">
+      <p className="regular-16 text-[#5D5D5D] mt-3 text-center">
         {description}
       </p>
     </li>

@@ -80,7 +80,7 @@ const MobileNavbar = ({ showNav, closeNav }: Props) => {
 
         {/* CTA Button */}
         <div className="px-6 pb-8">
-          <Button
+          {/* <Button
             type="button"
             title="Get Started"
             icon="/getStartBtnIcon.svg"
@@ -88,7 +88,15 @@ const MobileNavbar = ({ showNav, closeNav }: Props) => {
             textColor="text-white"
             className="w-full py-4 border-0 rounded-xl shadow-lg"
             onClick={handleGetStarted}
-          />
+          /> */}
+          <Link href="/contact" 
+          className="text-white font-semibold px-8 py-4 border-0 
+           flexCenter gap-3 rounded-xl shadow-lg bg-gradient w-full"
+           onClick={closeNav}
+           >
+            Get Started
+          <Image src="/getStartBtnIcon.svg" alt="getStartBtn" width={24} height={24} />
+        </Link>
         </div>
       </nav>
     </>

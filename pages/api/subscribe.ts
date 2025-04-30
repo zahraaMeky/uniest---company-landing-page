@@ -22,7 +22,7 @@ export default async function handler(
   try {
     const { data, error } = await resend.emails.send({
       from: 'Uniest <onboarding@resend.dev>', //the sender
-      to: ['eng.alzahraa.meky@gmail.com'], // Change to your desired recipient
+      to: ['support@uniest.om'], // Change to your desired recipient
       subject: '📬 New Newsletter Subscriber on Uniest',
       react: NewsletterTemplate({email}),
     });

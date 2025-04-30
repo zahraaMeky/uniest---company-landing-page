@@ -4,15 +4,15 @@ import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
-import { usePathname} from 'next/navigation'
-import router from "next/router";
+import { usePathname,useRouter } from 'next/navigation'
+
 type Props = {
   openNav: () => void
 }
 
 export const Navbar = ({ openNav }: Props) => {
   const pathName = usePathname()
-
+  const router = useRouter();
 
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
@@ -54,7 +54,7 @@ export const Navbar = ({ openNav }: Props) => {
       </ul>
 
       <div className="hidden lg:flexCenter">
-        <Button 
+        {/* <Button 
           type="button"
           title="Get Started"
           icon="/getStartBtnIcon.svg"
@@ -62,7 +62,11 @@ export const Navbar = ({ openNav }: Props) => {
           textColor="text-white"
           className="px-8 py-4 border-0 rounded-2xl"
           onClick={() => router.push("/contact")}
-        />
+        /> */}
+        <Link href="/contact" className="text-white font-semibold px-8 py-4 border-0  flexCenter gap-3 rounded-full bg-gradient w-full">
+          Get Started
+          <Image src="/getStartBtnIcon.svg" alt="getStartBtn" width={24} height={24} />
+        </Link>
       </div>
 
       {/* responsive hamburger menu button */}

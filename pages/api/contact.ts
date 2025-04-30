@@ -21,7 +21,7 @@ export default async function handler(
   try {
     const { data, error } = await resend.emails.send({
       from: 'Uniest <onboarding@resend.dev>', //the sender
-      to: ['eng.alzahraa.meky@gmail.com'], // Change to your desired recipient
+      to: ['support@uniest.om'], // Change to your desired recipient
       subject: 'Uniest New Contact Form Submission',
       react: EmailTemplate({ name, email, phoneNumber, company, message }),
     });

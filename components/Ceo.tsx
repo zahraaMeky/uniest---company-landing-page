@@ -55,7 +55,7 @@ export const Ceo = () => {
 
           {/* Key Roadmap */}
           <h5 className="text-lg mt-1 font-semibold text-[#2E2E2E]">Key Roadmap Includes:</h5>
-          <ul className="list-disc pl-5 text-sm sm:text-base text-[#2E2E2E] mt-2 mb-4">
+          <ul className="list-disc pl-5 text-sm sm:text-base text-[#2E2E2E] mt-2 mb-4 text-left">
             <li>Strong investor engagement, validating our vision.</li>
             <li>Expanding portfolio of funded, innovative businesses.</li>
             <li>Strategic partnerships boosting reach and credibility.</li>
@@ -63,7 +63,8 @@ export const Ceo = () => {
           <div className="flex gap-3 justify-center items-center">
             <Image src="/sayIcon.svg" alt="CEO image" width={81} height={69} />
             <div>
-               <h4 className="bold-20 text-transparent bg-clip-text bg-gradient-multiColor">Dr. Ahmed Mohamed</h4>
+               <h4 className="bold-20 text-transparent bg-clip-text bg-gradient-multiColor">Fawaz Al Mukhaini 
+               </h4>
                <p className="text-black font-medium regular-20 text-left">CEO of UNIEST</p>
             </div>
           </div>
