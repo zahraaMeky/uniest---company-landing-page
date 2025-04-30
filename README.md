@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>🌍 UNIEST Landing Page</h1>
 
-## Getting Started
+<p>
+  <strong>UNIEST</strong> is a modern and responsive landing page built with
+  <strong>Next.js</strong> and <strong>Tailwind CSS</strong>, designed to professionally showcase a company’s services, values, and vision with a sleek, user-friendly interface. 
+  This landing page is based on a custom Figma design and is <strong>not intended for free use</strong> — it is a <strong>commercial project</strong> developed for a real company in <strong>Oman</strong>.
+</p>
 
-First, run the development server:
+<blockquote>
+  ⚠️ <strong>Commercial Use Only:</strong> This project is developed for a client and <strong>may not be reused, distributed, or repurposed for free or personal use</strong>.
+</blockquote>
 
-```bash
-npm run dev
+<h2>✨ Features</h2>
+<ul>
+  <li>🔥 Clean and modern UI</li>
+  <li>⚡️ Fast performance and SEO-friendly</li>
+  <li>🎯 Accurate Figma to code implementation</li>
+  <li>📱 Fully responsive across all screen sizes</li>
+  <li>♻️ Modular and maintainable components</li>
+  <li>🌐 Deployed online and optimized for production</li>
+</ul>
+
+<h2>🎨 Figma Design</h2>
+<p>
+  🔗 <a href="https://www.figma.com/file/your-figma-link-here" target="_blank">View Figma Design</a>
+  <br>
+  <em>(Replace with the actual shared Figma file link)</em>
+</p>
+
+<h2>🧱 Built With</h2>
+<ul>
+  <li><a href="https://nextjs.org/" target="_blank">Next.js</a></li>
+  <li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
+  <li><a href="https://figma.com/" target="_blank">Figma</a></li>
+</ul>
+
+<h2>📸 Live Demo</h2>
+<p>
+  🔗 <a href="#" target="_blank">Visit the Live Website</a>
+  <br>
+  <em>(Replace # with your actual deployment link)</em>
+</p>
+
+<h2>🚀 Getting Started</h2>
+
+<h3>1. Clone the Repository</h3>
+<pre><code>git clone https://github.com/your-username/uniest-landing-page.git
+cd uniest-landing-page
+</code></pre>
+
+<h3>2. Install Dependencies</h3>
+<pre><code>npm install
+# or
+yarn install
+</code></pre>
+
+<h3>3. Start the Development Server</h3>
+<pre><code>npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+</code></pre>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>Then open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> in your browser.</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2>📁 Project Structure</h2>
+<pre><code>uniest-landing-page/
+├── components/         # Reusable UI components
+├── pages/              # Route-based pages (Next.js)
+├── public/             # Static assets (images, icons)
+├── styles/             # Includes global.css
+└── README.md           # Project documentation
+</code></pre>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<h2>👩‍💻 Author</h2>
+<p>
+  <strong>Alzahraa Mekky</strong><br>
+  Full Stack Developer | Based in Oman 🇴🇲<br>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> • 
+  <a href="https://yourportfolio.com" target="_blank">Portfolio</a>
+</p>
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2>📄 License</h2>
+<p>
+  This project is licensed under the <a href="LICENSE" target="_blank">MIT License</a>, 
+  but reuse is restricted to commercial contexts and not available for open-source redistribution.
+</p>
