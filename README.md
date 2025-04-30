@@ -1,4 +1,4 @@
-<h1>🌍 UNIEST Landing Page</h1>
+<h1>UNIEST Landing Page</h1>
 
 <p>
   <strong>UNIEST</strong> is a modern and responsive landing page built with
@@ -22,7 +22,7 @@
 
 <h2>🎨 Figma Design</h2>
 <p>
-  🔗 <a href="https://www.figma.com/file/your-figma-link-here" target="_blank">View Figma Design</a>
+  🔗 <a href="https://www.figma.com/proto/hiuZ4k2lVkuA9T9SYQmyPT/UNIEST?page-id=153%3A2222&node-id=153-2771&viewport=-145%2C386%2C0.4&t=5n8EhLyuEyRqNq8t-8&scaling=scale-down&content-scaling=fixed&starting-point-node-id=153%3A2771&hide-ui=1" target="_blank">View Figma Design</a>
   <br>
   <em>(Replace with the actual shared Figma file link)</em>
 </p>
@@ -36,7 +36,7 @@
 
 <h2>📸 Live Demo</h2>
 <p>
-  🔗 <a href="#" target="_blank">Visit the Live Website</a>
+  🔗 <a href="https://uniest.netlify.app/" target="_blank">Visit the Live Website</a>
   <br>
   <em>(Replace # with your actual deployment link)</em>
 </p>
@@ -44,8 +44,7 @@
 <h2>🚀 Getting Started</h2>
 
 <h3>1. Clone the Repository</h3>
-<pre><code>git clone https://github.com/your-username/uniest-landing-page.git
-cd uniest-landing-page
+<pre><code>git clone https://github.com/zahraaMeky/uniest---company-landing-page
 </code></pre>
 
 <h3>2. Install Dependencies</h3>
@@ -75,8 +74,8 @@ yarn dev
 <p>
   <strong>Alzahraa Mekky</strong><br>
   Full Stack Developer | Based in Oman 🇴🇲<br>
-  <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> • 
-  <a href="https://yourportfolio.com" target="_blank">Portfolio</a>
+  <a href="https://www.linkedin.com/in/engzahraa/" target="_blank">LinkedIn</a> • 
+  <a href="https://alzahraa-mekky.netlify.app/" target="_blank">Portfolio</a>
 </p>
 
 <h2>📄 License</h2>
