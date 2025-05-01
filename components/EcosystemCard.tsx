@@ -26,7 +26,7 @@ const EcosystemCard = ({ title, icon, description }: EcosystemCardProps) => {
       </h2>
 
       {/* Description */}
-      <p className="regular-16 text-[#5D5D5D] mt-3 text-center">
+      <p className="text-sm lg:text-base text-[#5D5D5D] mt-3 text-center">
         {description}
       </p>
     </li>
