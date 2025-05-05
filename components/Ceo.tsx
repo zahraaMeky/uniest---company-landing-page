@@ -26,7 +26,7 @@ export const Ceo = () => {
         {/* Description */}
         <div className="max-w-lg text-center mx-auto px-10 sm:px-6 md:px-0">
           <p className="text-black text-sm sm:text-base leading-relaxed">
-            At UNIEST, we’re redefining funding, empowering SMEs to grow, innovate, and lead.
+            At UNIEST, we’re redefining investing, empowering SMEs to grow, innovate, and lead.
           </p>
         </div>
       </div>
