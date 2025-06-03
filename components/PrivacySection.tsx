@@ -15,8 +15,8 @@ type ArticleSectionProps = {
 
 const PrivacySection = ({ title, content, subsections, items, note }: ArticleSectionProps) => {
   return (
-    <article className="space-y-2">
-      <h4 className="text-xl font-bold text-[#303030]">{title}</h4>
+    <article className="space-y-1">
+      <h4 className="text-lg font-bold text-[#303030]">{title}</h4>
 
     {typeof content === "string" && (
         <p
@@ -26,7 +26,7 @@ const PrivacySection = ({ title, content, subsections, items, note }: ArticleSec
     )}
       {subsections?.map((sub, idx) => (
         <div key={idx} className="space-y-1">
-          <h5 className="text-lg font-bold text-[#303030]">{sub.subtitle}</h5>
+          <h5 className="text-base font-bold text-[#303030]">{sub.subtitle}</h5>
           {sub.content && <p className="text-[#303030]">{sub.content}</p>}
           {sub.items && (
             <ul className="list-disc pl-5 space-y-1 text-[#303030]">
