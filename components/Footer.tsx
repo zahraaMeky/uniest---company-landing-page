@@ -30,9 +30,9 @@ export const Footer = () => {
           
           {/* Terms & Conditions - Left */}
           <div className="flex flex-col md:flex-row items-center gap-4 text-sm md:text-base">
-            <Link className="text-white hover:text-gray-300" href="/">Terms & Conditions</Link>
+            <Link className="text-white hover:text-gray-300" href="/TermsConditions">Terms & Conditions</Link>
             <span className="hidden md:block border-l border-white h-4"></span>
-            <Link className="text-white hover:text-gray-300" href="/">Privacy Policy</Link>
+            <Link className="text-white hover:text-gray-300" href="/privacy">Privacy Policy</Link>
           </div>
 
           {/* Social Links - Center */}

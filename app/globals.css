@@ -2,6 +2,15 @@
 @import "tw-animate-css";
 
 
+/* global.css */
+.bg-custom {
+  background-image: url('/BG.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 
 @utility flexBetween {
   @apply flex items-center justify-between;
@@ -31,6 +40,7 @@
   .bg-gradient {
     @apply bg-gradient-to-r from-[#E9038A] to-[#0A6195] ;
   }
+
   .bg-gradient-multiColor{
     @apply bg-gradient-to-r from-[#9B248E]/90 via-[#4A4792]/90 to-[#2D5393]/90
 

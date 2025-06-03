@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { toast } from "sonner"
 export const Newsletters = () => {
@@ -95,9 +96,9 @@ export const Newsletters = () => {
         {/* Align the paragraph to the left or right based on screen size */}
         <p className="mt-2 text-sm text-[#FCFAED] text-center lg:text-left lg:max-w-md">
           Your data is in safe hands. Check out our{"  "}
-          <a href="#">
+           <Link href="/privacy">
             Privacy Policy
-          </a>{"  "}
+           </Link>{"  "}
           for more info.
         </p>
       </div>

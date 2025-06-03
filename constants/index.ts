@@ -351,3 +351,112 @@ export const ModernTool = [
     ],
   },
 ]
+
+
+// constants/privacySections.ts
+export const sections = [
+  {
+    title: "1. SCOPE AND CONSENT",
+    content:
+      "By using our platform, you consent to the collection, processing, storage, and disclosure of your personal data as described in this policy and in compliance with Omani law.",
+  },
+  {
+    title: "2. WHAT DATA WE COLLECT",
+    subsections: [
+      {
+        subtitle: "2.1 Personal Data",
+        content: "Collected for identity verification and platform access:",
+        items: [
+          "Name, email, phone number.",
+          "National ID/passport (for KYC/AML compliance).",
+          "Nationality, job title, and professional profile.",
+        ],
+      },
+      {
+        subtitle: "2.2 Business Data (for SMEs, investors, accelerators)",
+        items: [
+          "Company registration details.",
+          "Financial and legal documents.",
+          "Investment documents (term sheets, cap tables, etc.).",
+        ],
+      },
+      {
+        subtitle: "2.3 Technical & Usage Data",
+        items: [
+          "Device/browser type.",
+          "IP address and login metadata.",
+          "Activity logs, message history, and file uploads.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "3. WHY WE COLLECT YOUR DATA",
+    content: "We collect and process personal data for the following purposes:",
+    items: [
+      "To verify user identity and eligibility",
+      "To facilitate investment discussions and secure data rooms",
+      "To comply with legal obligations, including PDPL and anti-money laundering laws",
+      "To improve platform performance and user experience",
+      "To communicate with users (platform updates, support)",
+    ],
+  },
+  {
+    title: "4. YOUR RIGHTS UNDER OMAN PDPL",
+    content: "You have the right to:",
+    items: [
+      "Access your personal data",
+      "Correct or update inaccurate information",
+      "Withdraw consent at any time (where applicable)",
+      "Request erasure of your data, subject to legal and contractual restrictions",
+      "Object to or limit specific types of data processing",
+    ],
+    note: `To exercise these rights, contact us at <u>support@uniest.om</u>`,
+  },
+  {
+    title: "5. DATA SHARING & THIRD PARTIES",
+    content: "Your data may be shared with:",
+    items: [
+      "Verified counterparties (e.g., investors or SMEs you engage with).",
+      "Service providers (e.g., KYC, cloud storage, analytics) under strict data protection contracts.",
+      "Regulatory authorities, when legally required (e.g., CMA, MTCIT, or CBO). We do not sell personal data to third parties.",
+    ],
+  },
+  {
+    title: "6. CROSS-BORDER DATA TRANSFERS",
+    content:
+      "Data may be processed outside Oman where necessary. Such transfers will comply with PDPL Article 12, ensuring adequate data protection measures are in place.",
+  },
+  {
+    title: "7. DATA SECURITY",
+    content:
+      "We use appropriate technical and organizational measures (encryption, role-based access control, monitoring) to secure your data. However, no digital system is 100% secure.",
+  },
+  {
+    title: "8. DATA RETENTION",
+    content:
+      "We retain data only as long as necessary for the purposes stated above or as required by law. Inactive accounts may be archived or deleted after 36 months.",
+  },
+  {
+    title: "9. CHILDREN’S DATA",
+    content:
+      "Our platform is not designed for individuals under the age of 18. We do not knowingly collect or process children's data.",
+  },
+  {
+    title: "10. COOKIES & TRACKING",
+    content:
+      "We use cookies and similar tools for authentication, session management, and analytics. You can control cookie settings through your browser preferences.",
+  },
+  {
+    title: "11. CHANGES TO THIS POLICY",
+    content:
+      "We may revise this Privacy Policy from time to time. Material updates will be announced via email or in-platform notification.",
+  },
+  {
+    title: "12. CONTACT - DATA PROTECTION OFFICER (DPO)",
+    content: `To contact our Data Protection Officer or submit a data rights request, use the details below:<br>Email: <u>support@uniest.om</u>`
+
+
+  },
+];
+
