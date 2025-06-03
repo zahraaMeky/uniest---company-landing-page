@@ -193,68 +193,37 @@ export  const TABS = [
 
 
 // Contact SECTION  // with social media
-export const ContactInfos = [
-  {
-    title: 'social',
-    contacts: [
-      {
-        title: 'Facebook/Uniest',
-        icon: '/fbIcon.svg',
-        url:'/',
-      },
-      {
-        title: 'LinkedIn/Uniest',
-        icon: '/inIcon.svg',
-        url:'https://www.linkedin.com/company/uniest-om/?originalSubdomain=om',
-      },
-      {
-        title: 'Instagram/Uniest',
-        icon: '/instaIcon.svg',
-        url:'https://www.instagram.com/uniest.om/',
-      },
-    ],
-  },
-  {
-    title: 'contact',
-    contacts: [
-      {
-        title: 'Support@Uniest.om',
-        icon: '/emailIcon.svg',
-        url:'',
-      },
-      {
-        title: '+968 91234567',
-        icon: '/WhatsappIcon.svg',
-        url:'',
-      },
-    ],
-  },
-  {
-    title: 'address',
-    contacts: [
-      {
-        title: 'Bawshar, Masqaţ, Oman',
-        icon: '/address.svg',
-        url:'',
-      },
-    
-    ],
-  },
-];
-
-// // Contact SECTION  // without social media
 // export const ContactInfos = [
- 
+//   {
+//     title: 'social',
+//     contacts: [
+//       {
+//         title: 'Facebook/Uniest',
+//         icon: '/fbIcon.svg',
+//         url:'/',
+//       },
+//       {
+//         title: 'LinkedIn/Uniest',
+//         icon: '/inIcon.svg',
+//         url:'https://www.linkedin.com/company/uniest-om/?originalSubdomain=om',
+//       },
+//       {
+//         title: 'Instagram/Uniest',
+//         icon: '/instaIcon.svg',
+//         url:'https://www.instagram.com/uniest.om/',
+//       },
+//     ],
+//   },
 //   {
 //     title: 'contact',
 //     contacts: [
 //       {
-//         title: 'support@uniest.om',
+//         title: 'Support@Uniest.om',
 //         icon: '/emailIcon.svg',
 //         url:'',
 //       },
 //       {
-//         title: '+968 93696741',
+//         title: '+968 91234567',
 //         icon: '/WhatsappIcon.svg',
 //         url:'',
 //       },
@@ -272,6 +241,42 @@ export const ContactInfos = [
 //     ],
 //   },
 // ];
+
+// // Contact SECTION  // without social media
+export const ContactInfos = [
+ 
+  {
+    title: 'social',
+    contacts: [
+      {
+        title: 'support@uniest.om',
+        icon: '/emailIcon.svg',
+        url:'',
+      },
+      {
+        title: '+968 93696741',
+        icon: '/WhatsappIcon.svg',
+        url:'',
+      },
+      {
+        title: 'LinkedIn/Uniest',
+        icon: '/inIcon.svg',
+        url:'https://www.linkedin.com/company/uniest-om/?originalSubdomain=om',
+      },
+    ],
+  },
+  {
+    title: 'address',
+    contacts: [
+      {
+        title: 'Bawshar, Masqaţ, Oman',
+        icon: '/address.svg',
+        url:'',
+      },
+    
+    ],
+  },
+];
 // Ecosystem SECTION
 export const Ecosystems = [
   {
