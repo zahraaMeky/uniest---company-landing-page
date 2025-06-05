@@ -10,8 +10,6 @@
   background-repeat: no-repeat;
 }
 
-
-
 @utility flexBetween {
   @apply flex items-center justify-between;
 }
