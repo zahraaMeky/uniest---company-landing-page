@@ -142,14 +142,14 @@ export const FEATURES = [
 // SOCIALS SECTION
 export const SOCIALS = [
   {
-    title: 'instagram',
-    icon: '/instagram.svg',
-    link: "https://www.instagram.com/uniest.om/",
+    title: 'Email',
+    icon: '/footerEmailSocial.svg',
+    link: "support@uniest.om",
   },
   {
-    title: 'facebook',
-    icon: '/facebook.svg',
-    link: "/",
+    title: 'WhatsApp',
+    icon: '/footerwhatsapp.svg',
+    link: "+968 93696741",
   },
   {
     title: 'linkedIn',

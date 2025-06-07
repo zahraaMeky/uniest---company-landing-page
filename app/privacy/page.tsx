@@ -7,7 +7,7 @@ import { Newsletters } from '@/components/Newsletters';
 const Privacy = () => {
   return (
     <>
-    <section className="bg-custom max-container padding-container relative w-full  flex flex-col gap-5 justify-start py-5  lg:py-10">
+    <section className="bg max-container padding-container relative w-full  flex flex-col gap-5 justify-start py-5  lg:py-10">
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row items-start md:items-center  gap-5">
         <Image src="/privacy-policy.svg" alt="Privacy Policy Icon" width={118} height={118} />

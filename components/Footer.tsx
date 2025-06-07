@@ -38,16 +38,31 @@ export const Footer = () => {
           {/* Social Links - Center */}
           <div className="flex justify-center">
             <ul className="flex gap-4 md:gap-6">
-              {SOCIALS.map((social) => (
-                <li key={social.title} className='transition-transform duration-300 hover:scale-105'>
-                  <Link href={social.link}>
-                    <Image src={social.icon} alt={social.title} width={40} height={40} className="w-10 h-10 md:w-14 md:h-14" />
-                  </Link>
-                </li>
-              ))}
+              {SOCIALS.map((social) => {
+                let href = social.link;
+
+                if (social.title.toLowerCase() === 'email') {
+                  href = `mailto:${social.link}`;
+                } else if (social.title.toLowerCase() === 'whatsapp') {
+                  href = `https://wa.me/${social.link.replace(/\D/g, '')}`;
+                }
+
+                return (
+                  <li key={social.title} className="transition-transform duration-300 hover:scale-105">
+                    <Link href={href} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={social.icon}
+                        alt={social.title}
+                        width={40}
+                        height={40}
+                        className="w-10 h-10 md:w-14 md:h-14"
+                      />
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
-
           {/* Copyright - Right */}
           <div className="text-white text-sm md:text-base">
             © UNIEST 2025. All rights reserved.

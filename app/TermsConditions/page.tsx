@@ -3,7 +3,7 @@ import Image from 'next/image';
 const TermsConditions = () => {
   return (
    <>
-    <section className="max-container padding-container relative w-full  flex flex-col gap-5 justify-start py-5  lg:py-10">
+    <section className="bg max-container padding-container relative w-full  flex flex-col gap-5 justify-start py-5  lg:py-10">
       <div className="flex flex-col md:flex-row items-start md:items-center  gap-5">
             <Image src="/document-protection.svg" alt="Privacy Policy Icon" width={118} height={118} />
             <div>
