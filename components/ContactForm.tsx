@@ -73,15 +73,25 @@ export const ContactForm = () => {
   };
   
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center gap-10 px-4 md:px-8 py-12">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-10 px-4 md:px-8 md:py-10 py-5">
       {/* Image on top for sm/md, right side for lg */}
       <div className="w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2 lg:mt-5">
+        { /* Desktop Image */}
         <Image
           src="/ContactFormImg.svg"
           width={552}
           height={690}
           alt="Contact Form Image"
-          className="max-w-full h-auto"
+          className="hidden lg:block max-w-full h-auto"
+        />
+
+        {/* Mobile Image */}
+        <Image
+          src="/uniestMobile.svg"
+          width={353}
+          height={185}
+          alt="Contact Form Image"
+          className="block lg:hidden w-full h-auto"
         />
       </div>
 
