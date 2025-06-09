@@ -149,7 +149,7 @@ export const SOCIALS = [
   {
     title: 'WhatsApp',
     icon: '/footerwhatsapp.svg',
-    link: "+968 93696741",
+    link: "+968 93641208",
   },
   {
     title: 'linkedIn',
@@ -254,7 +254,7 @@ export const ContactInfos = [
         url:'',
       },
       {
-        title: '+968 93696741',
+        title: '+968 93641208',
         icon: '/WhatsappIcon.svg',
         url:'',
       },
