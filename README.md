@@ -42,7 +42,7 @@
 
 <h2>📸 Live Demo</h2>
 <p>
-  🔗 <a href="https://uniest.netlify.app/" target="_blank">Visit the Live Website</a>
+  🔗 <a href="https://www.uniest.om" target="_blank">Visit the Live Website</a>
   <br>
   <em>(Replace # with your actual deployment link)</em>
 </p>
